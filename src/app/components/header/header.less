@@ -1,0 +1,147 @@
+@import (reference) '../../../../assets/less/resources';
+
+.header {
+  .row;
+  position: fixed;
+  z-index: 5;
+
+  &.withBg {
+    .header-bottom {
+      background-color: @dark-bg-color;
+      border-bottom: 1px solid @border-color;
+    }
+  }
+  .header-top {
+    .app-width;
+    .horizontal-center;
+
+    background-color: @dark-bg-color;
+    height: @header-top-height;
+    border-bottom: 1px solid @border-color;
+
+    .block {
+      &.table {
+        height: 100%;
+      }
+    }
+
+    .menu {
+      opacity: 0;
+      visibility: hidden;
+      .link-transition(all, 1.5s);
+
+    }
+
+
+    .uiSelectWrapper {
+      position: absolute;
+      z-index: 4;
+      opacity: 1;
+      .link-transition(opacity, 1.5s);
+    }
+
+    .login-btn {
+      margin-right: 10px;
+    }
+
+    @media only screen and (max-width: @config-header-md) {
+      .btn {
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+
+      .uiSelectWrapper {
+        position: relative;
+        margin: 0 0 0 15px;
+
+      }
+    }
+  }
+
+  .btn-transparent {
+    //border: none;
+    color: white;
+    margin-right: 10px;
+    border: 1px transparent solid;
+    &:hover {
+      border: 1px @bright-content-color solid;
+    }
+  }
+
+  .header-bottom {
+    .app-width;
+    .horizontal-center;
+    .no-padding;
+    .logo {
+      .no-padding;
+    }
+    .link-transition(transform, 1.5s);
+    display: table;
+    height: @header-bottom-height;
+    width: 100%;
+    .block {
+      &.container {
+        display: table;
+        height: 100%;
+        .browser('MSIE', { height: inherit; });
+      }
+    }
+
+    @media only screen and (max-width: @lg-tablet-screen) {
+      position: absolute;
+      z-index: -2;
+    }
+
+    @media only screen and (max-width: @mobile-screen) {
+      height: @header-bottom-height-mobile;
+    }
+  }
+
+  &.scrolling {
+    .header-bottom {
+      transform: translateY(-@header-bottom-height);
+      -webkit-transform: translateY(-@header-bottom-height);
+      -ms-transform: translateY(-@header-bottom-height);
+      position: relative;
+      z-index: -30;
+      .link-transition(transform, 1.5s);
+      display: none;
+    }
+    .header-top {
+      .menu {
+        opacity: 1;
+        visibility: visible;
+        .link-transition(all, 1.5s);
+      }
+
+      @media only screen and (min-width: @lg-tablet-screen) {
+        .uiSelectWrapper {
+          z-index: -999;
+          opacity: 0;
+          .link-transition(all, 1.5s);
+        }
+      }
+    }
+    &.in, &.out {
+      .header-bottom {
+        display: table !important;
+      }
+    }
+  }
+
+  .menu {
+    .menuItem {
+      float: right;
+      margin-left: 30px;
+      font-weight: 700;
+      font-size: 20px;
+      .tabTitle:hover {
+        color: white;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}

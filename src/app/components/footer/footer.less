@@ -1,0 +1,148 @@
+@import (reference) "../../../../assets/less/resources";
+
+.footer {
+  .app-width;
+  display: table;
+  background-color: @dark-bg-color;
+  padding: 50px 0px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  & .block {
+    & .creditCards {
+      margin-top: 15px;
+      border-top: 1px @border-footer-color solid;
+      border-bottom: 1px @border-footer-color solid;
+      border-right: 1px @border-footer-color solid;
+      width: 50%;
+      float: left;
+      height: 80px;
+      display: table;
+      text-align: center;
+      .icon {
+        margin-right: 6px;
+        height: 30px;
+        width: 50px;
+      }
+
+      .creditCardsContainer {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      @media only screen and (max-width: @mobile-screen) {
+        .full-width;
+        border-right: none;
+        border-bottom: none;
+      }
+
+    }
+    .socials {
+      margin-top: 15px;
+      width: 50%;
+      float: left;
+      border-top: 1px @border-footer-color solid;
+      border-bottom: 1px @border-footer-color solid;
+      text-align: center;
+      height: 80px;
+      display: table;
+
+      a {
+        margin-right: 7px;
+      }
+
+      i {
+
+        background-color: @bottom-bg-color;
+        border: 9px solid;
+        border-color: @bottom-bg-color;
+        border-radius: 25px;
+        width: 45px;
+        height: 45px;
+        line-height: 1.2;
+        .link-transition(all);
+        &:hover {
+          color: @dark-bg-color;
+          background-color: white;
+          border-color: white;
+        }
+      }
+
+      a:hover, a:focus {
+        text-decoration: none;
+      }
+
+      @media only screen and (max-width: @mobile-screen) {
+        .full-width;
+        border-right: none;
+        border-bottom: none;
+      }
+
+      .socialsContainer {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+
+    .logo {
+      float: left;
+      @media only screen and (max-width: 1130px) {
+        display: block;
+        img {
+          .horizontal-center;
+          max-width: 310px;
+        }
+        .horizontal-center;
+      }
+    }
+    .menu {
+      .vertical-center;
+      .menuItem {
+        font-size: 14px;
+        margin: 0 10px;
+        float: right;
+        .small-headline;
+        .tabTitle {
+          padding: 0;
+          -webkit-transition: color 0.5s;
+          -moz-transition: color 0.5s;
+          -ms-transition: color 0.5s;
+          -o-transition: color 0.5s;
+          transition: color 0.5s;
+          &:hover {
+            color: #fff;
+          }
+        }
+
+        &:first-child {
+          padding-right: 0;
+          margin-right: 0;
+        }
+
+      }
+
+      @media only screen and (max-width: 1130px) {
+        float: none;
+        padding: 15px 0;
+        display: inline-block;
+      }
+
+      @media only screen and (max-width: 896px) {
+        float: none;
+        display: inline;
+        .menuItem {
+          float: none;
+          margin: 20px 0;
+          padding: 0
+        }
+      }
+
+    }
+
+    .contentBody {
+      font-size: 14px;
+      padding: 25px 0px 0 0px;
+      color: @content-body-color;
+    }
+  }
+}

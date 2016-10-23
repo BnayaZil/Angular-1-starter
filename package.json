@@ -1,0 +1,53 @@
+{
+  "name": "angular-1-starter",
+  "version": "1.0.0",
+  "description": "A simple starter for angular 1 with Webpack configuration(ES6, Less, Fonts and etc)",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp serve",
+    "webpack": "gulp bundle",
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BnayaZil/Angular-1-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BnayaZil/Angular-1-starter/issues"
+  },
+  "homepage": "https://github.com/BnayaZil/Angular-1-starter#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-google-analytics": "^1.1.7",
+    "angular-ui-router": "^0.3.1",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "bootstrap-less": "^3.3.8",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "font-awesome": "^4.6.3",
+    "font-awesome-webpack": "0.0.4",
+    "gulp": "^3.9.1",
+    "gulp-bump": "^2.4.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-install": "^0.6.0",
+    "gulp-util": "^3.0.7",
+    "html-webpack-plugin": "^2.24.0",
+    "json-loader": "^0.5.4",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "lodash": "^4.16.4",
+    "ng-annotate": "^1.2.1",
+    "ng-annotate-loader": "^0.2.0",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-hot-middleware": "^2.13.0"
+  }
+}
