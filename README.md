@@ -40,7 +40,7 @@ Here list of npm commands:
 Here list of gulp commands:
 * `gulp server` will serve the app on port 8080.
 * `gulp bundle` will bundle the app to dist folder.
-* `gulp version` will add patch to version number in the package.json.
+* `gulp version` will add patch to version number in the package.json and create bundle in folder by version.
 * `gulp install` will install all package.json dependencies.
 * `gulp lint` Soon.
 * `gulp test` Soon.
