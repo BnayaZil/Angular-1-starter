@@ -1,29 +1,29 @@
 'use strict';
 
 // gulp utilities
-var gulp = require('gulp');
-var install = require('gulp-install');
-var gutil = require('gulp-util');
-var eslint = require('gulp-eslint');
-var bump = require('gulp-bump');
+const gulp = require('gulp');
+const install = require('gulp-install');
+const gutil = require('gulp-util');
+const eslint = require('gulp-eslint');
+const bump = require('gulp-bump');
 
 // node utilities
-var path  = require('path');
-var fs = require('fs');
+const path  = require('path');
+const fs = require('fs');
 
 // webpack utilities
-var webpack = require('webpack');
-var WebpackDevServer = require('webpack-dev-server');
+const webpack = require('webpack');
+const WebpackDevServer = require('webpack-dev-server');
 
 // karma
 // var karma = require('karma');
 // var karmaServer = karma.server;
 
 // dev root foldernp
-let root = path.join(__dirname, 'src');
+const root = path.join(__dirname, 'src');
 
 // ports
-let ports = {
+const ports = {
     dev: 8080
 };
 
@@ -36,7 +36,7 @@ gulp.task("bundle", ["webpack:bundle"]);
 gulp.task("serve", ["webpack:serve"]);
 
 gulp.task("webpack:bundle", (callback) => {
-    let webpackDistConfig = require('./webpack.dist.config.js');
+    const webpackDistConfig = require('./webpack.dist.config.js');
     // run webpack
     webpack(webpackDistConfig, function(err, stats) {
         if(err) throw new gutil.PluginError("webpack", err);
@@ -48,8 +48,8 @@ gulp.task("webpack:bundle", (callback) => {
 });
 
 gulp.task("webpack:serve", (callback) => {
-    let webpackDevConfig = require('./webpack.dev.config');
-    let compiler = webpack(webpackDevConfig);
+    const webpackDevConfig = require('./webpack.dev.config');
+    const compiler = webpack(webpackDevConfig);
 
     new WebpackDevServer(compiler, {
         contentBase: root,
@@ -131,8 +131,8 @@ gulp.task('bump', function(callback){
 
 // gulp task bundle version
 gulp.task("webpack:version", (callback) => {
-    let packageConfig = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
-    let webpackDistConfig = require('./webpack.dist.config.js');
+    const packageConfig = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
+    const webpackDistConfig = require('./webpack.dist.config.js');
     webpackDistConfig.output = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, packageConfig.version)
