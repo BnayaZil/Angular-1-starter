@@ -75,30 +75,30 @@ gulp.task("webpack:serve", (callback) => {
 /**
  * Configure the eslint task
  */
-gulp.task('lint', () => {
-    return gulp.src([`${root}/**/*.js`, `!${root}/assets/**/*`])
-        .pipe(eslint({
-            extends: 'eslint:recommended',
-            parserOptions: {
-                ecmaFeatures: {
-                    "jsx": true,
-                    "modules": true
-                }
-            },
-            globals: {
-                'jQuery':false,
-                '$':true,
-                'angular': true,
-                '_': true,
-                'require': true
-            },
-            envs: [
-                'browser'
-            ]
-        }))
-        .pipe(eslint.format())
-        .pipe(eslint.failAfterError());
-});
+// gulp.task('lint', () => {
+//     return gulp.src([`${root}/**/*.js`, `!${root}/assets/**/*`])
+//         .pipe(eslint({
+//             extends: 'eslint:recommended',
+//             parserOptions: {
+//                 ecmaFeatures: {
+//                     "jsx": true,
+//                     "modules": true
+//                 }
+//             },
+//             globals: {
+//                 'jQuery':false,
+//                 '$':true,
+//                 'angular': true,
+//                 '_': true,
+//                 'require': true
+//             },
+//             envs: [
+//                 'browser'
+//             ]
+//         }))
+//         .pipe(eslint.format())
+//         .pipe(eslint.failAfterError());
+// });
 
 /**
  * Install all node modules before running the app
