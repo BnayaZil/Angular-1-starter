@@ -16,6 +16,6 @@ export class User {
      * @param user - user details object
      */
     init(user) {
-
+        console.log(`User: ${user}`);
     }
 }

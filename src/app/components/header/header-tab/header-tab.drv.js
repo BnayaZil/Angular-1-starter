@@ -1,23 +1,25 @@
 /*
  Created by bnaya on 23/10/16,
- @Component Name: footer.drv
+ @Component Name: header.drv
  @Description:
  @Params: 
  @Return: 
  @Methods: 
 */
 
-import './footer.less';
+import './header-tab.less';
 
-export default angular.module('app.components.footer', [])
+export default angular.module('app.components.header.headerTab', [])
     .component('footer', footerConfig);
 
-const template = require('./footer.tpl.html');
+const template = require('./header-tab.tpl.html');
 
 function footerConfig() {
     return {
         restrict: 'E',
-        bindings: {},
+        bindings: {
+            data: '='
+        },
         template,
         controller: footerController,
         controllerAs: 'vm'

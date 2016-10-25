@@ -1,25 +1,25 @@
-import '../assets/less/general.less';
-import './app.less';
 import 'angular';
 import 'angular-ui-router';
 import 'angular-google-analytics';
-import { Bonus } from  './shared/services/bonus/bonus.srv';
-import './shared/providers/resolution/resolution.pvdr.js';
+import { shared } from  './shared/shared';
+import { components } from  './components/components';
+import { config } from './app.config';
 
 import './app.less';
-import './app.config';
+// import '../assets/less/general.less';
 
-const app = angular.module('app', ['ui.router', 'app.providers', 'angular-google-analytics', 'app.config']);
+
+const app = angular.module('app', ['ui.router', 'app.providers', 'angular-google-analytics', config.name, shared.name, components.name]);
 const template = require('./app.tpl.html');
 
-app.directive('app', appConfig);
+app.component('app', appConfig);
 
 function appConfig() {
     return {
+        bindings: {},
         controller: AppController,
-        controllerAs: 'app',
-        template,
-        replace: true
+        controllerAs: 'vm',
+        template
     }
 }
 
@@ -29,8 +29,8 @@ class AppController {
     }
 }
 
-app.service('logsHandlerService', LogsHandler);
-app.factory('domFactory', () => new DomGenerator());
+// app.service('logsHandlerService', LogsHandler);
+// app.factory('domFactory', () => new DomGenerator());
 
 
 angular.bootstrap(document, ['app'], {
