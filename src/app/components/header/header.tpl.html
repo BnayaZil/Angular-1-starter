@@ -1,1 +1,3 @@
-<div class="header row" ng-fixed ng-class="{'withBg' : !header.$state.includes('home')}" compile-with-watch="header.html" ></div>
+<div class="header">
+    <header-tab ng-repeat="tab in vm.tabs $id(tab)" data="tab"></header-tab>
+</div>
