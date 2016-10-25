@@ -19,3 +19,13 @@ src
 ⋅⋅⋅⋅⋅⋅⋅⋅home.tpl.html * home template
 ```
 
+# Getting started
+## Dependencies
+To run the app you will need globaly install of `webpack` and `gulp`:
+`npm i -g webpack gulp`
+
+## Installing
+* `fork` this repository.
+* `clone` your fork repository.
+* `npm i -g gulp webpack` install global cli [Dependencies](#dependencies).
+* `npm i` to install all project dependencies.
