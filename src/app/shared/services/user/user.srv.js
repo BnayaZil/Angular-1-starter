@@ -1,7 +1,7 @@
 /**
  * User service
  */
-export class User {
+class User {
     constructor() {
         'ngInject';
         User = {
@@ -19,3 +19,8 @@ export class User {
         console.log(`User: ${user}`);
     }
 }
+
+const userModule = angular.module(`app.shared.user`, [])
+    .factory(`userService`, User);
+
+export default userModule;

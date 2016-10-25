@@ -9,23 +9,21 @@
 
 import './footer.less';
 
-export default angular.module('app.components.footer', [])
-    .component('footer', footerConfig);
-
-const template = require('./footer.tpl.html');
-
-function footerConfig() {
-    return {
-        restrict: 'E',
-        bindings: {},
-        template,
-        controller: footerController,
-        controllerAs: 'vm'
-    }
-}
-
 class footerController {
     constructor() {
         console.log(`I'm footer :]`);
     }
 }
+
+const template = require('./footer.tpl.html');
+
+const footerConfig = {
+    restrict: 'E',
+    bindings: {},
+    template,
+    controller: footerController,
+    controllerAs: 'vm'
+};
+
+export default angular.module('app.components.footer', [])
+    .component('footer', footerConfig);

@@ -22,7 +22,7 @@ const config = angular.module('app.config', [])
         localStorageServiceProvider.setPrefix('ProjectName');
 
         // if url does not match any of the states, go to homepage
-        $urlRouterProvider.otherwise('404');
+        $urlRouterProvider.otherwise('home');
 
         // Set html5mode only for not localhost servers.
         if (window.location.host !== 'localhost:8080' && window.history && history.pushState)
@@ -32,15 +32,15 @@ const config = angular.module('app.config', [])
         $stateProvider
             .state('home', {
                 url: "/",
-                template: "<div>Home page</div>",
+                template: `<div>Home page</div>`,
                 controller: () => {
                     console.log(`I'm home.`);
                 },
                 controllerAs: "vm"
             })
             .state('404', {
-                url: "/",
-                template: "<div>Opss.. 404 Page</div>",
+                url: "/404",
+                template: `<div>Opss.. 404 Page</div>`,
                 controller: () => {
                     console.log(`I'm 404.`);
                 },

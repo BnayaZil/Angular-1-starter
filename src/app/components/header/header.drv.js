@@ -9,24 +9,31 @@
 import headerTab from './header-tab/header-tab.drv';
 import './header.less';
 
-export default angular.module('app.header', [headerTab.name])
-    .component('header', headerConfig);
+class headerController {
+    constructor() {
+        console.log(`I'm header :]`);
+        this.tabs = [
+            {
+                title: 'home',
+                state: 'home'
+            },
+            {
+                title: '404',
+                state: '404'
+            }
+        ]
+    }
+}
 
 const template = require('./header.tpl.html');
 
-function headerConfig() {
-    return {
-        restrict: 'E',
-        bindings: {},
-        template,
-        controller: headerController,
-        controllerAs: 'vm'
-    }
-}
+const headerConfig = {
+    restrict: 'E',
+    bindings: {},
+    template,
+    controller: headerController,
+    controllerAs: 'vm'
+};
 
-class headerController {
-    constructor() {
-        console.log(`I'm header :]`)
-    }
-
-}
+export default angular.module('app.header', [headerTab.name])
+    .component('header', headerConfig);
