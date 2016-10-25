@@ -9,25 +9,23 @@
 
 import './header-tab.less';
 
-export default angular.module('app.components.header.headerTab', [])
-    .component('footer', footerConfig);
+class HeaderTabController {
+    constructor() {
+        console.log(`I'm headerTab :]`);
+    }
+}
 
 const template = require('./header-tab.tpl.html');
 
-function footerConfig() {
-    return {
-        restrict: 'E',
-        bindings: {
-            data: '='
-        },
-        template,
-        controller: footerController,
-        controllerAs: 'vm'
-    }
-}
+const headerTabConfig = {
+    restrict: 'E',
+    bindings: {
+        data: '='
+    },
+    template,
+    controller: HeaderTabController,
+    controllerAs: 'vm'
+};
 
-class footerController {
-    constructor() {
-        console.log(`I'm footer :]`);
-    }
-}
+export default angular.module('app.components.header.headerTab', [])
+    .component('headerTab', headerTabConfig);

@@ -2,6 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d055cff-2a77-4d95-b8fd-93fc7eb7d53a" name="Default" comment="">
+<<<<<<< HEAD
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.babelrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Angular-1-starter.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/less/general.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulpfile.babel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/app.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/app.drv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/app.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/app.tpl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/components/footer/footer.drv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/components/footer/footer.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/components/footer/footer.tpl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/components/header/header.drv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/components/header/header.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/components/header/header.tpl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/providers/resolution/resolution.pvdr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/services/user/user.srv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/shared.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack.dev.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack.dist.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+=======
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/components/components.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/components/header/header-tab/header-tab.drv.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/components/header/header-tab/header-tab.less" />
@@ -22,6 +52,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/components/header/header.tpl.html" afterPath="$PROJECT_DIR$/src/app/components/header/header.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/services/user/user.srv.js" afterPath="$PROJECT_DIR$/src/app/shared/services/user/user.srv.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/shared/shared.js" afterPath="$PROJECT_DIR$/src/app/shared/shared.js" />
+>>>>>>> 292b5f4b54370b0a0e594c17478ebee800490d60
     </list>
     <ignored path="Angular-1-starter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -401,16 +432,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477208037848</updated>
+<<<<<<< HEAD
+      <workItem from="1477208039102" duration="4757000" />
+=======
       <workItem from="1477208039102" duration="4705000" />
+<<<<<<< HEAD
       <workItem from="1477222914953" duration="5158000" />
+=======
+      <workItem from="1477222914953" duration="4935000" />
+>>>>>>> 292b5f4b54370b0a0e594c17478ebee800490d60
+>>>>>>> c591a20cba82f1b66c2ba5f2947d87383cf99731
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="9863000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="4757000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1985" y="24" width="2495" height="1416" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="9640000" />
+>>>>>>> c591a20cba82f1b66c2ba5f2947d87383cf99731
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+>>>>>>> 292b5f4b54370b0a0e594c17478ebee800490d60
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -419,8 +469,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+=======
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30963856" sideWeight="0.49753347" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+>>>>>>> 292b5f4b54370b0a0e594c17478ebee800490d60
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
