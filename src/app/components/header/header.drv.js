@@ -6,20 +6,18 @@
  @Return: 
  @Methods: 
 */
-import headerTab from './header-tab/header-tab.drv';
 import './header.less';
 
 class headerController {
     constructor() {
-        console.log(`I'm header :]`);
         this.tabs = [
             {
-                title: 'home',
-                state: 'home'
+                title: 'Favorites',
+                state: 'favorites'
             },
             {
-                title: '404',
-                state: '404'
+                title: 'Options',
+                state: 'options'
             }
         ]
     }
@@ -35,5 +33,5 @@ const headerConfig = {
     controllerAs: 'vm'
 };
 
-export default angular.module('app.header', [headerTab.name])
+export default angular.module('app.header', [])
     .component('header', headerConfig);

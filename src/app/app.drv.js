@@ -2,21 +2,22 @@ import 'angular';
 import uiRouter from 'angular-ui-router';
 import angularGoogleAnalytics from 'angular-google-analytics';
 import angularLocalStorage from 'angular-local-storage';
+import ngMaterial from 'angular-material';
+import ngAria from 'angular-aria';
+import ngAnimate from 'angular-animate';
 import shared from  './shared/shared';
 import components from  './components/components';
 import config from './app.config';
 
 import './app.less';
-// import '../assets/less/general.less';
 
 
-const app = angular.module('app', [uiRouter, angularGoogleAnalytics.name, angularLocalStorage, config.name, shared.name, components.name]);
+const app = angular.module('app', [uiRouter, angularGoogleAnalytics.name, angularLocalStorage, ngMaterial, ngAria, ngAnimate, config.name, shared.name, components.name]);
 const template = require('./app.tpl.html');
 
 class AppController {
     constructor() {
         'ngInject';
-        console.log('Im in app!');
     }
 }
 
@@ -28,11 +29,6 @@ const appConfig = {
 };
 
 app.component('app', appConfig);
-
-
-// app.service('logsHandlerService', LogsHandler);
-// app.factory('domFactory', () => new DomGenerator());
-
 
 angular.bootstrap(document, ['app'], {
     strictDi: true

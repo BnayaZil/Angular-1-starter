@@ -1,0 +1,11 @@
+<div class="optionsList">
+    <md-list>
+        <md-list-item class="md-2-line" ng-repeat="item in vm.data | orderBy:'title' track by $id(item)">
+            <md-checkbox ng-model="item.checked" ng-change="::vm.checking(item, $index)"></md-checkbox>
+            <div class="md-list-item-text">
+                <h3>{{item.title}}</h3>
+                <p>{{item.description}}</p>
+            </div>
+        </md-list-item>
+    </md-list>
+</div>

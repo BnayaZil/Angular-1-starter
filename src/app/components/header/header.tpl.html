@@ -1,3 +1,9 @@
-<div class="header">
-    <header-tab ng-repeat="tab in vm.tabs track by $id(tab)" data="tab"></header-tab>
+<div class="header" layout="column" layout-fill>
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <span>Favorites app</span>
+            <span flex></span>
+            <md-button class="md-raised md-button md-ink-ripple" ng-repeat="tab in ::vm.tabs track by $id(tab)" ng-bind="::tab.title" ui-sref="{{::tab.state}}"></md-button>
+        </div>
+    </md-toolbar>
 </div>

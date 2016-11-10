@@ -1,7 +1,7 @@
-import user from './services/user/user.srv';
+import data from './services/data/data.srv';
 
 const sharedModule = angular.module('app.shared', [
-    user.name
+    data.name
 ]);
 
 export default sharedModule;
