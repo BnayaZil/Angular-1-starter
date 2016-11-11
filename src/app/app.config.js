@@ -1,6 +1,11 @@
 const config = angular.module('app.config', [])
     .config(['$compileProvider', '$stateProvider', '$urlRouterProvider', '$locationProvider', 'localStorageServiceProvider', '$provide', 'AnalyticsProvider', ($compileProvider, $stateProvider, $urlRouterProvider, $locationProvider, localStorageServiceProvider, $provide, AnalyticsProvider) => {
 
+        // Analytics Configuration.
+        AnalyticsProvider.setAccount('UA-44441111-2');
+        AnalyticsProvider.ignoreFirstPageLoad(true);
+        AnalyticsProvider.setPageEvent('$stateChangeSuccess');
+
         // Enabled debug info classes as "ng-scope".
         $compileProvider.debugInfoEnabled(false);
 
@@ -13,10 +18,11 @@ const config = angular.module('app.config', [])
             return $delegate;
         });
 
-        localStorageServiceProvider.setPrefix('favorite');
+        // Set prefix for localstorage. * replace the 'ProjectName' *
+        localStorageServiceProvider.setPrefix('ProjectName');
 
         // if url does not match any of the states, go to homepage
-        $urlRouterProvider.otherwise('options');
+        $urlRouterProvider.otherwise('home');
 
         // Set html5mode only for not localhost servers.
         if (window.location.host !== 'localhost:8080' && window.history && history.pushState)
@@ -24,25 +30,19 @@ const config = angular.module('app.config', [])
 
 
         $stateProvider
-            .state('options', {
-                url: "/options",
-                template: `<md-content><options-list data="vm.optionsData"></options-list></md-content>`,
-                controller: function(optionsData) {
-                    this.optionsData = optionsData;
-                },
-                resolve: {
-                    optionsData: (dataService) => dataService.asyncData
+            .state('home', {
+                url: "/",
+                template: `<div>Home page</div>`,
+                controller: () => {
+                    console.log(`I'm home.`);
                 },
                 controllerAs: "vm"
             })
-            .state('favorites', {
-                url: "/favorites",
-                template: `<md-content><favorites-list data="vm.favoritesData"></favorites-list></md-content>`,
-                controller: function(favoritesData) {
-                    this.favoritesData = favoritesData;
-                },
-                resolve: {
-                    favoritesData: (dataService) => dataService.getFavorites()
+            .state('404', {
+                url: "/404",
+                template: `<div>Opss.. 404 Page</div>`,
+                controller: () => {
+                    console.log(`I'm 404.`);
                 },
                 controllerAs: "vm"
             })
